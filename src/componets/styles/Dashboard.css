@@ -1,0 +1,153 @@
+/* General styling for the main page */
+.main-page-dashboard {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fff; /* Fondo blanco */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header styling */
+.head-dashboard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.head-dashboard img {
+    width: 40px; /* Tamaño de la imagen */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.head-dashboard h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+.head-dashboard .leave-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.head-dashboard .leave-button:hover {
+    background-color: darkred;
+}
+
+/* Form styling */
+.form-dashboard {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+.form-dashboard .addTask-button {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: #b19cd9; /* Color lila */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.form-dashboard .addTask-button:hover {
+    background-color: #9a7bc1;
+    transform: scale(1.05);
+}
+
+.form-dashboard table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.form-dashboard table tbody tr td {
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.form-dashboard table tbody tr td img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.form-dashboard table tbody tr td input {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.form-dashboard table tbody tr td p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Button for "Listar" */
+.list-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #4caf50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.list-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para el botón de eliminar */
+.delete-button {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    padding: 5px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.delete-button img {
+    width: 20px; /* Tamaño del ícono */
+    height: 20px;
+}
+
+.delete-button:hover {
+    transform: scale(1.1); /* Efecto de agrandamiento al pasar */
+    opacity: 0.8; /* Ligero cambio de opacidad */
+}
+
+.delete-button:active {
+    transform: scale(0.95); /* Efecto de reducción al hacer clic */
+}

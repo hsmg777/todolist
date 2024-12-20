@@ -1,0 +1,46 @@
+/* styles.css */
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #fff; /* Fondo blanco */
+    font-family: 'Arial', sans-serif; /* Fuente simple */
+    color: #333; /* Color de texto */
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem; /* Tamaño grande para el título */
+    font-weight: bold; /* Negrita */
+    margin: 0; /* Sin margen */
+    color: #333; /* Color oscuro */
+}
+
+h4 {
+    font-size: 1.2rem; /* Más pequeño para el subtítulo */
+    margin: 10px 0 20px; /* Espaciado entre el título y subtítulo */
+    color: #666; /* Gris claro */
+}
+
+.begin-button {
+    padding: 10px 20px; /* Espaciado interno */
+    background-color: #b19cd9; /* Color lila */
+    color: white; /* Texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s ease, background-color 0.2s ease; /* Animaciones suaves */
+}
+
+.begin-button:hover {
+    background-color: #9a7bc1; /* Color más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Efecto de agrandar */
+}
+
+.begin-button:active {
+    transform: scale(0.95); /* Efecto de encoger al hacer clic */
+}

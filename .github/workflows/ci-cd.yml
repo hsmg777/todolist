@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Paso 4: Correr pruebas (opcional, elimina si no quieres pruebas)
+      # Paso 4: Correr pruebas
       - name: Run tests
         run: npm test -- --watchAll=false
 

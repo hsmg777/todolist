@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import '../componets/styles/MainPage.css'
+import './styles/MainPage.css'
 import { useNavigate } from "react-router-dom";
 
 

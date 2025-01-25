@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "../componets/styles/Dashboard.css";
+import "./styles/Dashboard.css";
 
 const Dashboard = () => {
     const [tareas, setTareas] = useState([]);
@@ -54,6 +54,14 @@ const Dashboard = () => {
         }
     };
 
+    // Función para confirmar y eliminar la tarea
+    const confirmarEliminacion = (id_tarea) => {
+        const confirmacion = window.confirm("¿Seguro de eliminar la tarea?");
+        if (confirmacion) {
+            eliminarTarea(id_tarea);
+        }
+    };
+
     const crearTarea = () => {
         navigate("/storetarea");
     };
@@ -89,7 +97,7 @@ const Dashboard = () => {
                                 <td>
                                     <button
                                         className="delete-button"
-                                        onClick={() => eliminarTarea(tarea.id_tarea)}
+                                        onClick={() => confirmarEliminacion(tarea.id_tarea)}
                                     >
                                         <img src="/trash.png" alt="Eliminar" />
                                     </button>
